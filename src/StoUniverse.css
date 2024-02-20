@@ -1,43 +1,50 @@
 .Universe {
-	font-family: 'Courier New', Courier, monospace;
-	min-height: 100vh;
-	background-color: #ddd5e4;
-	text-align: center;
+  min-height: 100vh;
+  padding: 0 10em;
+  background-color: #ddd5e4;
+	color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: black;
+  text-align: center;
 	font-size: calc(8px + 1vmin);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .Universe h1 {
 	justify-content: start;
 }
 
+.UniverseBtn {
+  border: none;
+  background: none;
+  font: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+  padding: 10px 0;
+}
+
 .Transmission {
 	font-style: oblique;
 }
 
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.StepTransition {
+  padding: 10px;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.Next {
+  align-items: end;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.NavLink {
+  color: #57545a;
+}
+
+/* *** IDs *** */
+
+#enter {
+  padding: 0 25pxm;
 }

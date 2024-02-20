@@ -18,14 +18,16 @@ const App = () => {
             ← DCWW Global HQ
           </a>
         </p>
+        <h1 className="App-link">
+          ENTER
+        </h1>
+        <span style={{background: '#4a464c'}}> 💫 </span>
         <p>
           <a
             className="App-link"
             href="/enter"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            <b>ENTER sto's universe →</b>
+            <b>sto's universe →</b>
           </a>
         </p>
       </header>
