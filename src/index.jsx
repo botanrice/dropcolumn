@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import '@wcj/dark-mode';
+// import '@wcj/dark-mode';
 import './index.css';
 import Home from './Home';
 import EnterSto from './routes/EnterSto';
@@ -13,6 +13,7 @@ import Gallery from './routes/Gallery';
 import Story from './routes/Story';
 import Thoughts from './routes/Thoughts';
 import Color from './routes/Color';
+import Palettes from './routes/Palettes';
 import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "color/",
     element: <Color />,
+  },
+  {
+    path: "palettes/",
+    element: <Palettes />,
   },
   {
     path: "music/",
