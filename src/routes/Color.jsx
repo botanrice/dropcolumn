@@ -83,6 +83,13 @@ const Color = () => {
     setHsva({ h: 226, s: 29, v: 68, a: 1 });
   }
 
+  function selectTrack(trackID) {
+    console.log(trackID);
+    setTrackID(trackID);
+    setThisTrack(trackDB[trackID]);
+    setHsva({ h: 226, s: 29, v: 68, a: 1 });
+  }
+
   async function getData() {
     try {
       const jsonValue = await AsyncStorage.getItem('tracks');
@@ -170,16 +177,18 @@ const Color = () => {
         <button onClick={getData}>show</button>
         <button onClick={clearDB}>clear</button>
         <button onClick={initialPopulate}>populate</button>
-        <button onClick={() => console.log(trackDB)}>db</button>
-        <button onClick={() => console.log(thisTrack)}>this</button>
-        {/* <UniverseButton>Submit</UniverseButton> */}
-        {/* <div className="FormProgress">
+        <div className="FormProgress">
           {Object.keys(trackDB).map(keyID => {
             return (
-              <span key={keyID} className={trackID == keyID ? "BoldID" : ""}>{keyID}</span>
+              <span 
+                className={trackID == keyID ? "BoldID TrackNav" : "TrackNav"}
+                key={keyID} 
+                onClick={() => selectTrack(keyID)}>
+                  {keyID}
+              </span>
             );
           })}
-        </div>*/}
+        </div>
       </div>
     </div>
   );

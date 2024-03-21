@@ -109,14 +109,19 @@
   flex-direction: column;
 }
 
-/* .ColorBlock { 
-  width: 35px;
-  height: 15px;
-  margin: 5px;
-} */
-
 .ColorBlock {
+  /* width: 35px;
+  height: 15px;
+  margin: 5px; */
   font-size: 8px;
+}
+
+.TrackNav {
+  font-size: 11px + 1rem;
+  font-style: italic;
+  text-decoration: underline;
+  border-radius: 25px;
+  margin: 5px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
