@@ -98,6 +98,27 @@
   font-weight: bold;
 }
 
+.AllPalettes {
+  display: flex;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+
+.PaletteDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .ColorBlock { 
+  width: 35px;
+  height: 15px;
+  margin: 5px;
+} */
+
+.ColorBlock {
+  font-size: 8px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .Universe {

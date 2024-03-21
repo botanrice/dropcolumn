@@ -30,6 +30,7 @@ const App = () => {
             <b>sto's universe →</b>
           </a>
         </p>
+        <a className="App-link" href="/color">colors</a>
       </header>
     </div>
   );
