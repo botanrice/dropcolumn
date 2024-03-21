@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 // import '@wcj/dark-mode';
@@ -16,38 +17,38 @@ import Color from './routes/Color';
 import Palettes from './routes/Palettes';
 import ErrorPage from './ErrorPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "enter/",
+    path: "/enter/",
     element: <EnterSto />,
   },
   {
-    path: "color/",
+    path: "/color/",
     element: <Color />,
   },
   {
-    path: "palettes/",
+    path: "/palettes/",
     element: <Palettes />,
   },
   {
-    path: "music/",
+    path: "/music/",
     element: <Music />,
   },
   {
-    path: "gallery/",
+    path: "/gallery/",
     element: <Gallery />,
   },
   {
-    path: "story/",
+    path: "/story/",
     element: <Story />,
   },
   {
-    path: "thoughts/",
+    path: "/thoughts/",
     element: <Thoughts />,
   },
   

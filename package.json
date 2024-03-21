@@ -2,6 +2,7 @@
   "name": "vite-template-react",
   "version": "1.4.0",
   "type": "module",
+  "homepage": "https://botanrice.github.io/dropcolumn/",
   "scripts": {
     "start": "vite --port 3000 --open",
     "dev": "vite --port 3000 --open",

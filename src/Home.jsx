@@ -25,12 +25,12 @@ const App = () => {
         <p>
           <a
             className="App-link"
-            href="/enter"
+            href="#/enter"
           >
             <b>sto's universe →</b>
           </a>
         </p>
-        <a className="App-link" href="/color">colors</a>
+        <a className="App-link" href="#/color">colors</a>
       </header>
     </div>
   );
