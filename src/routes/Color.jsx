@@ -32,6 +32,7 @@ const Color = () => {
 
   useEffect(() => {
     let ignore = false;
+    initialPopulate();
     setTrackDB({});
     setThisTrack({});
     getData().then(result => {
@@ -132,6 +133,7 @@ const Color = () => {
       }
       await AsyncStorage.setItem('tracks', JSON.stringify(tracksInit));
       console.log('added');
+      return tracksInit;
     } catch (e) {
       // saving error
     }

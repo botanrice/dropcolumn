@@ -39,3 +39,6 @@ What is preventing me from saying this look good enough to go?
 [ ] Test that this works online
 [ ] Navbar at top
 [ ] Nav back to home or colors at palettes
+
+
+## Helpful Links
