@@ -8,5 +8,5 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.js'],
   },
-  base: '/dropcolumn/'
+  base: '/dropcolumn'
 });
